@@ -13,7 +13,7 @@ public class App
         MongoClient mongoClient = new MongoClient("localhost", 27000);
         // Get a database - will create when we use it
         MongoDatabase database = mongoClient.getDatabase("mydb");
-        // Get a collection from the database
+        // Get a collection from the database 
         MongoCollection<Document> collection = database.getCollection("test");
         // Create a document to store
         Document doc = new Document("name", "Kevin Chalmers")
